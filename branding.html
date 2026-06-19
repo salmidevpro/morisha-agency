@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Corporate Branding & Embroidery | Morisha Agency</title>
+    <!-- Link to the Master Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Inline page-specific design layout extensions -->
+    <style>
+        .branding-hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200') no-repeat center center/cover;
+            color: var(--white);
+            padding: 100px 0;
+            text-align: center;
+        }
+        .process-flow {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+            position: relative;
+        }
+        .process-step {
+            background: var(--white);
+            border: 1px solid var(--border-gray);
+            padding: 32px 24px;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        .step-number {
+            background-color: var(--orange);
+            color: var(--white);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .placement-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .placement-list {
+            list-style: none;
+        }
+        .placement-list li {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border-gray);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .placement-list strong {
+            color: var(--navy);
+        }
+        .check-icon {
+            color: var(--orange);
+            font-weight: bold;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        .portfolio-item {
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--white);
+            box-shadow: var(--shadow);
+        }
+        .portfolio-label {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 10px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        @media (max-width: 968px) {
+            .process-flow { grid-template-columns: repeat(2, 1fr); }
+            .placement-grid { grid-template-columns: 1fr; gap: 32px; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 640px) {
+            .process-flow { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Global Announcement Banner -->
+    <div class="announcement-bar">
+        🚚 Free Shipping on Bulk Orders Over 100 Units! | 📞 Need an instant quote? Click to chat via WhatsApp.
+    </div>
+
+    <!-- Global Sticky Navigation Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">MORISHA<span>AGENCY</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop Catalog</a></li>
+                    <li><a href="branding.html" class="active">Custom Branding</a></li>
+                    <li><a href="contact.html">Bulk Orders</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Quick Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Showcase Block -->
+    <section class="branding-hero">
+        <div class="container" style="max-width: 800px;">
+            <h1 style="font-size: 3.25rem; font-weight: 800; line-height: 1.15; margin-bottom: 16px;">Turn Every Uniform Into a Marketing Asset</h1>
+            <p style="font-size: 1.25rem; color: var(--border-gray); margin-bottom: 32px;">Transform standard work garments into powerful brand extensions. Our in-house commercial outfitting floor delivers ultra-crisp execution built for industrial wash cycles.</p>
+            <a href="#branding-form-section" class="btn btn-accent" style="padding: 16px 36px;">Get Custom Branding Quote</a>
+        </div>
+    </section>
+
+    <!-- Core Technologies Overview -->
+    <section class="section-padding" style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title">Industrial Modification Systems</h2>
+            <p class="section-subtitle">We deploy diverse fabric processing machinery arrays optimized to match your environmental durability specs.</p>
+            
+            <div class="grid-3">
+                <!-- System 1: Embroidery -->
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1613243555988-441166d4d6fd?q=80&w=400" alt="Precision Embroidery Setup"></div>
+                    <div class="card-body">
+                        <h3 class="card-title">High-Definition Embroidery</h3>
+                        <p class="card-meta" style="font-size: 0.95rem; line-height: 1.6; color: var(--text-dark);">Best for corporate polo matrices, formal uniform oxfords, executive fleece linings, and canvas caps. Delivers a thick, rich 3D texture profile featuring world-class fade resistance.</p>
+                    </div>
+                </div>
+
+                <!-- System 2: Screen Printing -->
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=400" alt="Commercial Screen Printing"></div>
+                    <div class="card-body">
+                        <h3 class="card-title">Commercial Screen Printing</h3>
+                        <p class="card-meta" style="font-size: 0.95rem; line-height: 1.6; color: var(--text-dark);">Best for high-volume promotional t-shirt packages, lightweight high-visibility monitoring vests, and events. Highly economical system generating clean, sharp alignment colors.</p>
+                    </div>
+                </div>
+
+                <!-- System 3: Heat Transfer -->
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400" alt="Heat Transfer Application"></div>
+                    <div class="card-body">
+                        <h3 class="card-title">Heavy-Duty Heat Transfers</h3>
+                        <p class="card-meta" style="font-size: 0.95rem; line-height: 1.6; color: var(--text-dark);">Best for multi-toned structural graphic badges, rainproof technical outerwear shells, and specialized reflective striping. Seamless, smooth application bonds directly to modern performance fibers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapping Placement & Configurations Section -->
+    <section class="section-padding">
+        <div class="container placement-grid">
+            <div>
+                <h2 class="section-title" style="text-align: left; margin-bottom: 16px;">Standard Logo Mapping Matrix</h2>
+                <p style="color: var(--text-muted); margin-bottom: 24px;">Ensure maximum branding visibility and compliance across all shifts. Our production floor works from strict blueprint specifications for standard garment placements:</p>
+                <ul class="placement-list">
+                    <li><span class="check-icon">✓</span> <div><strong>Left & Right Breast Alignment:</strong> The primary location for corporate badges, worker identification markers, and operational insignias.</div></li>
+                    <li><span class="check-icon">✓</span> <div><strong>Full-Width Center Back:</strong> High-impact positioning ideal for site operations, contracting identification logos, and emergency service lettering.</div></li>
+                    <li><span class="check-icon">✓</span> <div><strong>Sleeve Profile Accentuation:</strong> Adds subtle, high-end visibility markers, rank indicators, or secondary product safety certifications.</div></li>
+                    <li><span class="check-icon">✓</span> <div><strong>Retroreflective Brand Bonding:</strong> Integrates custom logo systems out of highly reflective films, maximizing field safety in low-light environments.</div></li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600" alt="Branded Asset Placement Blueprint" style="border-radius: 8px; box-shadow: var(--shadow-lg);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Quality Proof Section -->
+    <section class="section-padding" style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title">Production Quality Framework</h2>
+            <p class="section-subtitle">See how we convert raw stock industrial items into crisp, corporate-compliant utility uniform assets.</p>
+            
+            <div class="portfolio-grid">
+                <!-- Asset Set 1 -->
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=600" alt="Raw Garment Profile Setup">
+                    <div class="portfolio-label">Baseline Component: Raw Stock Polo Supply</div>
+                </div>
+                <!-- Asset Set 2 -->
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600" alt="Finished Corporate Asset Configuration">
+                    <div class="portfolio-label">Finished Asset: Completed High-Definition Corporate Uniform Set</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Linear Processing Roadmap Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">The Seamless Branding Process</h2>
+            <p class="section-subtitle">We guide your corporate asset modification through an optimized deployment pipeline from design to delivery.</p>
+            
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4 style="color: var(--navy); margin-bottom: 8px; font-weight:700;">Apparel Procurement</h4>
+                    <p style="font-size:0.85rem; color: var(--text-muted);">Select standard items directly from our comprehensive bulk inventories.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4 style="color: var(--navy); margin-bottom: 8px; font-weight:700;">Artwork Submission</h4>
+                    <p style="font-size:0.85rem; color: var(--text-muted);">Provide your identity guidelines in standard vector file formats (.EPS, .PDF, .PNG).</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4 style="color: var(--navy); margin-bottom: 8px; font-weight:700;">Digital Verification</h4>
+                    <p style="font-size:0.85rem; color: var(--text-muted);">Approve precision 2D design proofs before production lines are finalized.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4 style="color: var(--navy); margin-bottom: 8px; font-weight:700;">Enterprise Dispatch</h4>
+                    <p style="font-size:0.85rem; color: var(--text-muted);">Your fully branded, custom outfitting items are safely packaged and shipped directly to your facilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Graphics Inbound Form Component Block -->
+    <section class="section-padding" id="branding-form-section" style="background-color: var(--light-gray);">
+        <div class="container" style="max-width: 700px;">
+            <div class="form-card">
+                <h2 style="font-size: 1.75rem; color: var(--navy); font-weight: 700; text-align: center; margin-bottom: 8px;">Initialize Branding Asset Profile</h2>
+                <p style="color: var(--text-muted); text-align: center; font-size: 0.9rem; margin-bottom: 32px;">Provide your corporate branding requirements below. Our design desk will build your digital identity mockups inside our standard 2-hour turnaround timeframe.</p>
+                
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Graphics Profile Initialized successfully. Digital layout mockups will arrive via email within 2 hours.');">
+                    <div class="form-group">
+                        <label>Company Identity Name *</label>
+                        <input type="text" class="form-control" placeholder="e.g., Vanguard Logistics Systems" required>
+                    </div>
+                    
+                    <div class="grid-2" style="gap: 16px;">
+                        <div class="form-group">
+                            <label>Target Modification Technology</label>
+                            <select class="form-control">
+                                <option>High-Definition Embroidery Threading</option>
+                                <option>Commercial Ink Silkscreen Arrays</option>
+                                <option>Heavy-Duty Heat Transfer Film Sheets</option>
+                                <option>Not Sure - Request Expert Asset Review</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Estimated Total Item Bulk Count *</label>
+                            <input type="number" class="form-control" placeholder="e.g., 75" min="10" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Target Placement Coordinates Selection</label>
+                        <div class="checkbox-grid" style="margin-top: 8px;">
+                            <label><input type="checkbox" checked> Left Breast Placement</label>
+                            <label><input type="checkbox"> Right Breast Placement</label>
+                            <label><input type="checkbox"> Center Back Array</label>
+                            <label><input type="checkbox"> Shoulder/Sleeve Coordinates</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Upload Brand Vector Asset / Logo Mockup <span style="font-weight:normal; color: var(--text-muted); font-size: 0.8rem;">(Vector Formats Preferred)</span></label>
+                        <input type="file" class="form-control" style="background-color: var(--white); padding: 8px;">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Special Alignment Instructions or Pantones Match Keys</label>
+                        <textarea class="form-control" rows="3" placeholder="List specific Pantone color codes, precision scale sizing requests, or item configuration dependencies..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-accent" style="width: 100%; border-radius: 4px; font-size: 1.05rem; font-weight: 700;">Get Custom Branding Mockups</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Floating WhatsApp Widget -->
+    <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20request%20a%20workwear%20quote." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        💬
+    </a>
+
+    <!-- Global Structural Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo" style="color: var(--white); margin-bottom: 16px; display: inline-block;">MORISHA<span>AGENCY</span></a>
+                <p style="color: var(--border-gray); font-size: 0.9rem;">Premium industrial-grade apparel outfitting solutions engineered to optimize site identity control, safety validation, and workforce protection.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product Lines</h4>
+                <ul>
+                    <li><a href="shop.html">Industrial Workwear</a></li>
+                    <li><a href="shop.html">Corporate Apparel</a></li>
+                    <li><a href="shop.html">High-Visibility Systems</a></li>
+                    <li><a href="shop.html">PPE Equipment & Safety Footwear</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Enterprise Core</h4>
+                <ul>
+                    <li><a href="branding.html">Custom Embroidery</a></li>
+                    <li><a href="branding.html">Screen Printing Arrays</a></li>
+                    <li><a href="contact.html">Bulk Discounts Structure</a></li>
+                    <li><a href="contact.html">Request RFQ Framework</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact HQ</h4>
+                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;">📍 102 Industrial Dev Zone, Suite B</p>
+                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;">✉️ B2B@morishaagency.com</p>
+                <p style="color: var(--border-gray); font-size: 0.95rem;">📞 +1 (555) 019-9000</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Morisha Agency. All Rights Reserved. Optimizing Workforce Protection Standards Everywhere.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

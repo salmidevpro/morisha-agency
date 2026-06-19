@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Industrial Catalog | Morisha Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .search-box-container {
+            margin-bottom: 24px;
+        }
+        .search-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border-gray);
+            border-radius: 6px;
+            font-size: 0.95rem;
+        }
+        .catalog-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-gray);
+        }
+        .sort-select {
+            padding: 8px 12px;
+            border: 1px solid var(--border-gray);
+            border-radius: 4px;
+            background-color: var(--white);
+            color: var(--text-dark);
+            cursor: pointer;
+        }
+        .card-actions-row {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .badge-discount {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background-color: var(--orange);
+            color: var(--white);
+            padding: 4px 10px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="announcement-bar">
+        🚚 Free Shipping on Bulk Orders Over 100 Units! | 📞 Need an instant quote? Click to chat via WhatsApp.
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">MORISHA<span>AGENCY</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop Catalog</a></li>
+                    <li><a href="branding.html">Custom Branding</a></li>
+                    <li><a href="contact.html">Bulk Orders</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Quick Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <div style="margin-bottom: 40px;">
+            <h1 class="section-title" style="text-align: left;">Industrial Procurement Catalog</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Equip your entire organization with field-tested uniforms and certified safety gear. Add items to your quote list or request orders instantly via WhatsApp.</p>
+        </div>
+        
+        <div class="shop-layout">
+            
+            <aside class="sidebar">
+                <div class="search-box-container">
+                    <div class="filter-title">Search Inventory</div>
+                    <input type="text" class="search-input" placeholder="e.g., Safety Boots, Overalls...">
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-title">Garment & Equipment Class</div>
+                    <label><input type="checkbox" checked> Workwear Uniforms</label>
+                    <label><input type="checkbox"> Corporate Wear</label>
+                    <label><input type="checkbox"> Safety & Reflective Wear</label>
+                    <label><input type="checkbox"> Safety Footwear</label>
+                    <label><input type="checkbox"> Helmets & Head Protection</label>
+                    <label><input type="checkbox"> Heavy Duty Overalls</label>
+                    <label><input type="checkbox"> Branded Promotional T-Shirts</label>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-title">Filter By Industry</div>
+                    <label><input type="checkbox"> Construction & Engineering</label>
+                    <label><input type="checkbox"> Logistics & Warehousing</label>
+                    <label><input type="checkbox"> Manufacturing & Factories</label>
+                    <label><input type="checkbox"> Corporate Offices</label>
+                    <label><input type="checkbox"> Medical & Healthcare</label>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-title">Branding Capabilities</div>
+                    <label><input type="checkbox"> Plain / No Branding</label>
+                    <label><input type="checkbox"> Precision Embroidery Eligible</label>
+                    <label><input type="checkbox"> Silk Screen Printing Eligible</label>
+                </div>
+            </aside>
+
+            <div class="shop-content">
+                
+                <div class="catalog-controls">
+                    <div style="color: var(--text-muted); font-weight: 500;">Showing 1–8 of 24 industrial assets</div>
+                    <div>
+                        <select class="sort-select">
+                            <option value="popular">Most Popular</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid-3">
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            <span class="badge-discount">B2B Best Seller</span>
+                            <img src="https://images.unsplash.com/photo-1582550943137-44f8446a3e50?q=80&w=400" alt="EnduraGuard D59 Flame-Retardant Conti Suit">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">EnduraGuard D59 Flame-Retardant Conti Suit</h3>
+                            <div class="card-meta">Sizes: 32 - 54 | Colors: Navy, Khaki</div>
+                            <div class="card-price">$42.00 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ wholesale tier</span></div>
+                            <div class="card-actions-row">
+                                <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
+                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20D59%20Conti%20Suit" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=400" alt="Executive Classic Pique Polo Shirt">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Executive Classic Pique Polo Shirt</h3>
+                            <div class="card-meta">100% Combed Cotton | Anti-Shrink</div>
+                            <div class="card-price">$16.50 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ min 10 units</span></div>
+                            <div class="card-actions-row">
+                                <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
+                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Executive%20Polo%20Shirts" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <span class="badge-discount">SANS Approved</span>
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=400" alt="Titan-X Steel Toe Cap Safety Boots">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Titan-X Steel Toe Cap Safety Boots</h3>
+                            <div class="card-meta">Oil, Acid, & Slip Resistant Protection</div>
+                            <div class="card-price">$49.95 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ pairs</span></div>
+                            <div class="card-actions-row">
+                                <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
+                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Titan-X%20Safety%20Boots" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=400" alt="Executive Zip-Front Reflective Vest">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Executive Zip-Front Reflective Vest</h3>
+                            <div class="card-meta">Class 2 High-Visibility Visibility Standard</div>
+                            <div class="card-price">$5.20 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ bulk rates apply</span></div>
+                            <div class="card-actions-row">
+                                <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
+                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Executive%20Reflective%20Vests" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=400" alt="Heavy-Duty Waterproof Bomber Jacket">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Heavy-Duty Waterproof Bomber Jacket</h3>
+                            <div class="card-meta">Thermal Insulation Layer | Class 3</div>
+                            <div class="card-price">$55.00 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ Unit</span></div>
+                            <div class="card-actions-row">
+                                <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
+                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Reflective%20Bomber%20Jackets" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400" alt="Vented Industrial Hard Hat">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Vented Industrial Hard Hat (Class E)</h3>
+                            <div class="card-meta">6-Point Suspension Adjustment Wheel</div>
+                            <div class="card-price">$12.80 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ Unit</span></div>
+                            <div class="card-actions-row">
+                                <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
+                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Industrial%20Hard%20Hats" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20request%20a%20workwear%20quote." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        💬
+    </a>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo" style="color: var(--white); margin-bottom: 16px; display: inline-block;">MORISHA<span>AGENCY</span></a>
+                <p style="color: var(--border-gray); font-size: 0.9rem;">Premium industrial-grade apparel outfitting solutions engineered to optimize site identity control, safety validation, and workforce protection.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product Lines</h4>
+                <ul>
+                    <li><a href="shop.html">Industrial Workwear</a></li>
+                    <li><a href="shop.html">Corporate Apparel</a></li>
+                    <li><a href="shop.html">High-Visibility Systems</a></li>
+                    <li><a href="shop.html">PPE Equipment & Safety Footwear</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Enterprise Core</h4>
+                <ul>
+                    <li><a href="branding.html">Custom Embroidery</a></li>
+                    <li><a href="branding.html">Screen Printing Arrays</a></li>
+                    <li><a href="contact.html">Bulk Discounts Structure</a></li>
+                    <li><a href="contact.html">Request RFQ Framework</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact HQ</h4>
+                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;">📍 102 Industrial Dev Zone, Suite B</p>
+                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;">✉️ B2B@morishaagency.com</p>
+                <p style="color: var(--border-gray); font-size: 0.95rem;">📞 +1 (555) 019-9000</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Morisha Agency. All Rights Reserved. Optimizing Workforce Protection Standards Everywhere.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

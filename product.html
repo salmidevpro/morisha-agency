@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Heavy-Duty Reflective Bomber Jacket | Morisha Agency</title>
+    <!-- Link to the Master Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Inline page-specific micro-interactions -->
+    <style>
+        .product-container {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 48px;
+            margin-top: 24px;
+        }
+        .gallery-main {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border-gray);
+            overflow: hidden;
+            background-color: var(--light-gray);
+        }
+        .gallery-thumbs {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .thumb {
+            width: 80px;
+            height: 80px;
+            border-radius: 4px;
+            border: 2px solid var(--border-gray);
+            cursor: pointer;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .thumb.active, .thumb:hover {
+            border-color: var(--orange);
+        }
+        .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .product-meta-badge {
+            display: inline-block;
+            background-color: rgba(15, 23, 42, 0.08);
+            color: var(--navy);
+            padding: 6px 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .price-tier-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9rem;
+        }
+        .price-tier-table th, .price-tier-table td {
+            border: 1px solid var(--border-gray);
+            padding: 10px 12px;
+            text-align: left;
+        }
+        .price-tier-table th {
+            background-color: var(--light-gray);
+            color: var(--navy);
+            font-weight: 700;
+        }
+        .tabs-container {
+            margin-top: 60px;
+            border-top: 1px solid var(--border-gray);
+            padding-top: 40px;
+        }
+        .tabs-headers {
+            display: flex;
+            gap: 32px;
+            border-bottom: 2px solid var(--border-gray);
+            margin-bottom: 24px;
+        }
+        .tab-link {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            padding-bottom: 12px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+        }
+        .tab-link.active {
+            color: var(--navy);
+            border-bottom-color: var(--orange);
+        }
+        @media (max-width: 968px) {
+            .product-container {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Global Announcement Banner -->
+    <div class="announcement-bar">
+        🚚 Free Shipping on Bulk Orders Over 100 Units! | 📞 Need an instant quote? Click to chat via WhatsApp.
+    </div>
+
+    <!-- Global Sticky Navigation Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">MORISHA<span>AGENCY</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop Catalog</a></li>
+                    <li><a href="branding.html">Custom Branding</a></li>
+                    <li><a href="contact.html">Bulk Orders</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Quick Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dynamic Configuration Layout -->
+    <main class="container section-padding">
+        
+        <!-- Breadcrumb Navigation -->
+        <div style="margin-bottom: 24px; font-size: 0.9rem; color: var(--text-muted);">
+            <a href="index.html" style="color: inherit;">Home</a> &nbsp;/&nbsp; 
+            <a href="shop.html" style="color: inherit;">Shop Catalog</a> &nbsp;/&nbsp; 
+            <span style="color: var(--text-dark); font-weight: 500;">Premium Bomber Jacket</span>
+        </div>
+
+        <div class="product-container">
+            
+            <!-- Left Side: Interactive High-Res Media Space -->
+            <div>
+                <div class="gallery-main">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=800" alt="Premium Heavy-Duty Reflective Bomber Jacket - Main View">
+                </div>
+                <div class="gallery-thumbs">
+                    <div class="thumb active"><img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=150" alt="Thumbnail 1"></div>
+                    <div class="thumb"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=150" alt="Thumbnail 2"></div>
+                    <div class="thumb"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=150" alt="Thumbnail 3"></div>
+                </div>
+            </div>
+
+            <!-- Right Side: Spec Configuration & Multi-Conversion Panel -->
+            <div>
+                <span class="product-meta-badge">SKU: MA-JKT-092 • High-Vis Class 3</span>
+                <h1 style="font-size: 2.25rem; color: var(--navy); line-height: 1.2; margin-bottom: 8px; font-weight: 800;">Premium Heavy-Duty Reflective Bomber Jacket</h1>
+                
+                <div style="font-size: 2rem; font-weight: 800; color: var(--orange); margin: 12px 0 4px 0;">
+                    $55.00 <span style="font-size: 1rem; color: var(--text-muted); font-weight: normal;">/ Base Unit Price</span>
+                </div>
+                <p style="font-size: 0.85rem; color: #22C55E; font-weight: 700; margin-bottom: 20px;">✓ In Stock & Ready for Custom Corporate Branding</p>
+                
+                <p style="color: var(--text-dark); margin-bottom: 24px;">Engineered to withstand harsh outdoor industrial environments. Features a fully windproof and water-resistant outer Oxford shell, thick thermal lining insulation, and double-stitched EN-certified high-visibility silver reflective bands.</p>
+                
+                <!-- B2B Bulk Tier Breakdown Table -->
+                <div class="filter-title" style="margin-bottom: 8px;">Corporate Volume Price Tiers</div>
+                <table class="price-tier-table">
+                    <thead>
+                        <tr>
+                            <th>Order Qty</th>
+                            <th>10 - 50 Units</th>
+                            <th>51 - 200 Units</th>
+                            <th>201+ Units</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Unit Price</strong></td>
+                            <td>$55.00</td>
+                            <td>$49.50 (Save 10%)</td>
+                            <td>Request Custom RFQ</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-gray); margin: 24px 0;">
+
+                <!-- Parameter Selection Forms -->
+                <div class="p-option-title">1. Choose Fabric Colorway</div>
+                <div class="color-chips">
+                    <div class="chip active">Safety Orange</div>
+                    <div class="chip">High-Vis Lime</div>
+                    <div class="chip">Industrial Navy</div>
+                </div>
+
+                <div class="p-option-title">2. Select Size Allocation</div>
+                <div class="size-chips">
+                    <div class="chip">S</div>
+                    <div class="chip active">M</div>
+                    <div class="chip">L</div>
+                    <div class="chip">XL</div>
+                    <div class="chip">XXL</div>
+                    <div class="chip">3XL</div>
+                </div>
+
+                <div class="p-option-title">3. Integrated Identity Branding Options</div>
+                <select class="form-control" style="margin-bottom: 24px;">
+                    <option>No External Branding Required (Plain Garment Supply)</option>
+                    <option>Add Automated High-Definition Crest Logo Embroidery (+$3.50 / pc)</option>
+                    <option>Add Back-Panel Commercial Screen Printing Setup (+$2.50 / pc)</option>
+                </select>
+
+                <!-- Core Action Conversions Row -->
+                <div style="display: grid; grid-template-columns: 0.4fr 1.6fr; gap: 16px; margin-bottom: 16px;">
+                    <div>
+                        <label style="font-size: 0.8rem; font-weight: 700; display: block; margin-bottom: 8px;">Est. Quantity</label>
+                        <input type="number" value="25" class="form-control" min="10" style="text-align: center; font-weight: 700;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: flex-end;">
+                        <a href="contact.html" class="btn btn-accent" style="width: 100%;">Add Configuration to Quote Basket</a>
+                    </div>
+                </div>
+
+                <!-- Secondary Conversion: Instant WhatsApp Link -->
+                <div>
+                    <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20a%20bulk%20quote%20for%20the%20Premium%20Reflective%20Bomber%20Jacket." class="btn btn-whatsapp" target="_blank">
+                        💬 Order / Inquire Directly via WhatsApp Desk
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Technical Specification Tabs Area -->
+        <div class="tabs-container">
+            <div class="tabs-headers">
+                <div class="tab-link active">Technical Specifications</div>
+                <div class="tab-link">Branding Process Rules</div>
+                <div class="tab-link">Client Reviews (5★)</div>
+            </div>
+            <div style="color: var(--text-dark); max-width: 800px;">
+                <ul style="padding-left: 20px; margin-bottom: 24px;">
+                    <li style="margin-bottom: 8px;"><strong>Fabric Assembly:</strong> 300D Heavy-Duty polyurethane coated Oxford polyester weave canvas layer.</li>
+                    <li style="margin-bottom: 8px;"><strong>Reflective Performance:</strong> 50mm width retroreflective silver micro-bead safety tape bands conforming completely to international safety protocols.</li>
+                    <li style="margin-bottom: 8px;"><strong>Pocket Matrix:</strong> 2 bottom fleece-lined handwarmer pockets, 1 outer tactical radio breast cell pocket, 2 internal safe documentation files.</li>
+                    <li style="margin-bottom: 8px;"><strong>Weatherization Protection:</strong> Completely taped internal seams alongside wind-cheating ribbed structural wrist storms.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Related Industrial Equipment Cross-Sells Section -->
+        <div style="margin-top: 80px; border-top: 1px solid var(--border-gray); padding-top: 40px;">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 32px;">Frequently Purchased Together</h2>
+            <div class="grid-4">
+                
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=400" alt="Boots"></div>
+                    <div class="card-body">
+                        <h3 class="card-title" style="font-size:1rem;">Titan-X Steel Safety Boots</h3>
+                        <div class="card-price" style="font-size:1.1rem;">$49.95</div>
+                        <a href="shop.html" class="btn btn-outline" style="width: 100%; padding: 8px; font-size: 0.8rem;">View Asset</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1582550943137-44f8446a3e50?q=80&w=400" alt="Conti Suit"></div>
+                    <div class="card-body">
+                        <h3 class="card-title" style="font-size:1rem;">Flame-Retardant Conti Suit</h3>
+                        <div class="card-price" style="font-size:1.1rem;">$42.00</div>
+                        <a href="shop.html" class="btn btn-outline" style="width: 100%; padding: 8px; font-size: 0.8rem;">View Asset</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400" alt="Helmet"></div>
+                    <div class="card-body">
+                        <h3 class="card-title" style="font-size:1rem;">Vented Industrial Hard Hat</h3>
+                        <div class="card-price" style="font-size:1.1rem;">$12.80</div>
+                        <a href="shop.html" class="btn btn-outline" style="width: 100%; padding: 8px; font-size: 0.8rem;">View Asset</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=400" alt="Vest"></div>
+                    <div class="card-body">
+                        <h3 class="card-title" style="font-size:1rem;">Zip-Front Reflective Vest</h3>
+                        <div class="card-price" style="font-size:1.1rem;">$5.20</div>
+                        <a href="shop.html" class="btn btn-outline" style="width: 100%; padding: 8px; font-size: 0.8rem;">View Asset</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Global Floating WhatsApp Widget -->
+    <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20request%20a%20workwear%20quote." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        💬
+    </a>
+
+    <!-- Global Structural Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo" style="color: var(--white); margin-bottom: 16px; display: inline-block;">MORISHA<span>AGENCY</span></a>
+                <p style="color: var(--border-gray); font-size: 0.9rem;">Premium industrial-grade apparel outfitting solutions engineered to optimize site identity control, safety validation, and workforce protection.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product Lines</h4>
+                <ul>
+                    <li><a href="shop.html">Industrial Workwear</a></li>
+                    <li><a href="shop.html">Corporate Apparel</a></li>
+                    <li><a href="shop.html">High-Visibility Systems</a></li>
+                    <li><a href="shop.html">PPE Equipment & Safety Footwear</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Enterprise Core</h4>
+                <ul>
+                    <li><a href="branding.html">Custom Embroidery</a></li>
+                    <li><a href="branding.html">Screen Printing Arrays</a></li>
+                    <li><a href="contact.html">Bulk Discounts Structure</a></li>
+                    <li><a href="contact.html">Request RFQ Framework</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact HQ</h4>
+                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;">📍 102 Industrial Dev Zone, Suite B</p>
+                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;">✉️ B2B@morishaagency.com</p>
+                <p style="color: var(--border-gray); font-size: 0.95rem;">📞 +1 (555) 019-9000</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Morisha Agency. All Rights Reserved. Optimizing Workforce Protection Standards Everywhere.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

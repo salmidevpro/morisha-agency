@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Bulk Orders & RFQ | Morisha Agency</title>
+    <!-- Link to the Master Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Inline page-specific layout optimizations -->
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 64px;
+            align-items: start;
+        }
+        .info-channel-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 24px;
+            background-color: var(--light-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+        .info-channel-card:hover {
+            border-color: var(--orange);
+            transform: translateY(-2px);
+        }
+        .info-icon {
+            font-size: 1.75rem;
+            line-height: 1;
+            padding: 12px;
+            background-color: var(--white);
+            border-radius: 6px;
+            box-shadow: var(--shadow);
+        }
+        .sla-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgba(249, 115, 22, 0.1);
+            color: var(--orange);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        @media (max-width: 968px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Global Announcement Banner -->
+    <div class="announcement-bar">
+        🚚 Free Shipping on Bulk Orders Over 100 Units! | 📞 Need an instant quote? Click to chat via WhatsApp.
+    </div>
+
+    <!-- Global Sticky Navigation Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">MORISHA<span>AGENCY</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop Catalog</a></li>
+                    <li><a href="branding.html">Custom Branding</a></li>
+                    <li><a href="contact.html" class="active">Bulk Orders</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Quick Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Form and Contact Layout -->
+    <main class="container section-padding">
+        <div class="contact-layout">
+            
+            <!-- Left Column: Direct Procurement Channels -->
+            <div>
+                <span class="sla-badge">⚡ 2-Hour Quote Turnaround SLA</span>
+                <h1 style="font-size: 3rem; color: var(--navy); font-weight: 800; line-height: 1.15; margin-bottom: 16px;">Need Uniforms for Your Team?</h1>
+                <p style="font-size: 1.15rem; color: var(--text-muted); margin-bottom: 40px; line-height: 1.7;">
+                    Whether you are outfitting a construction crew of 50 or an entire logistics enterprise across multiple facilities, we offer customized wholesale cost tiers, tailored logistics dispatch sheets, and fast digital brand mockups.
+                </p>
+
+                <!-- Channel 1: WhatsApp Support Desk -->
+                <div class="info-channel-card">
+                    <div class="info-icon" style="color: #22C55E;">💬</div>
+                    <div>
+                        <h3 style="font-size: 1.1rem; color: var(--navy); font-weight: 700; margin-bottom: 4px;">Instant WhatsApp B2B Support</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 12px;">Chat live with an industrial textile asset configuration specialist for rapid inventory assessments.</p>
+                        <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20we%20need%20a%20bulk%20uniform%20quote." target="_blank" style="color: var(--orange); font-weight: 700; font-size: 0.95rem;">Launch WhatsApp Chat →</a>
+                    </div>
+                </div>
+
+                <!-- Channel 2: Telephone Hotline -->
+                <div class="info-channel-card">
+                    <div class="info-icon" style="color: var(--navy);">📞</div>
+                    <div>
+                        <h3 style="font-size: 1.1rem; color: var(--navy); font-weight: 700; margin-bottom: 4px;">Strategic Corporate Hotline</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 4px;">Speak directly with a procurement specialist regarding supply agreements, custom patterns, or tender bids.</p>
+                        <p style="font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-top: 8px;">+1 (555) 019-9000</p>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">Mon–Fri, 8:00 AM – 5:00 PM (HQ Standard Time)</span>
+                    </div>
+                </div>
+
+                <!-- Channel 3: Email Procurement Desk -->
+                <div class="info-channel-card">
+                    <div class="info-icon" style="color: var(--orange);">✉️</div>
+                    <div>
+                        <h3 style="font-size: 1.1rem; color: var(--navy); font-weight: 700; margin-bottom: 4px;">Enterprise RFQ Inbox</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 4px;">Send over blueprints, comprehensive item lists, Excel sheets, or official corporate procurement tender documentation files.</p>
+                        <p style="font-size: 1.1rem; font-weight: 700; color: var(--orange); margin-top: 8px;">B2B@morishaagency.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Conversion Optimized Bulk Order Engine Form -->
+            <div class="form-card">
+                <h2 style="font-size: 1.75rem; color: var(--navy); font-weight: 700; margin-bottom: 8px;">Request a Free Quote</h2>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 32px;">Fill out this operational assessment profile, and an account executive will process your matching wholesale pricing framework breakdown.</p>
+                
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('RFQ Submitted Successfully. An outfitting consultant will follow up within 2 hours.');">
+                    
+                    <!-- Contact Details Row -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+                        <div class="form-group" style="margin: 0;">
+                            <label>Contact Name *</label>
+                            <input type="text" class="form-control" placeholder="e.g., John Doe" required>
+                        </div>
+                        <div class="form-group" style="margin: 0;">
+                            <label>Corporate Email *</label>
+                            <input type="email" class="form-control" placeholder="e.g., procurement@company.com" required>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+                        <!-- Company Name Field -->
+                        <div class="form-group" style="margin: 0;">
+                            <label>Company Name *</label>
+                            <input type="text" class="form-control" placeholder="Apex Engineering Ltd" required>
+                        </div>
+                        <!-- Telephone Number Field -->
+                        <div class="form-group" style="margin: 0;">
+                            <label>Phone Number *</label>
+                            <input type="tel" class="form-control" placeholder="+1 (555) 000-0000" required>
+                        </div>
+                    </div>
+
+                    <!-- Quantity Field Tier Selector -->
+                    <div class="form-group">
+                        <label>Estimated Total Order Quantity *</label>
+                        <select class="form-control" required>
+                            <option value="">-- Select Required Quantity Tier --</option>
+                            <option value="tier-1">10 – 50 Units (Minimum Bulk Baseline)</option>
+                            <option value="tier-2">51 – 200 Units (Medium Corporate Fleet)</option>
+                            <option value="tier-3">201 – 500 Units (Large Operations Team)</option>
+                            <option value="tier-4">501+ Fleet Units (Enterprise Scaling Discount)</option>
+                        </select>
+                    </div>
+
+                    <!-- Product Category Selector -->
+                    <div class="form-group">
+                        <label>Product Categories of Interest *</label>
+                        <div class="checkbox-grid" style="margin-top: 8px;">
+                            <label><input type="checkbox"> Industrial Workwear Uniforms</label>
+                            <label><input type="checkbox"> Tailored Corporate Wear</label>
+                            <label><input type="checkbox"> Reflective / High-Vis Safety Wear</label>
+                            <label><input type="checkbox"> Certified Safety Footwear</label>
+                            <label><input type="checkbox"> Head Protection & Helmets</label>
+                            <label><input type="checkbox"> PPE Equipment Kits</label>
+                        </div>
+                    </div>
+
+                    <!-- Branding Strategy Selection Toggle -->
+                    <div class="form-group">
+                        <label>In-House Custom Logo Branding Requirements</label>
+                        <div style="display: flex; gap: 24px; margin-top: 8px;">
+                            <label style="font-weight: normal; cursor: pointer;">
+                                <input type="radio" name="branding_form_select" checked> Yes, include custom logo branding options
+                            </label>
+                            <label style="font-weight: normal; cursor: pointer;">
+                                <input type="radio" name="branding_form_select"> No, unbranded items are fine
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- File Attachment Upload Area -->
+                    <div class="form-group">
+                        <label>Upload Logo File or Spec Sheets <span style="font-weight:normal; color:var(--text-muted); font-size:0.8rem;">(Optional - PDF, PNG, EPS)</span></label>
+                        <input type="file" class="form-control" style="background-color: var(--light-gray); padding: 8px;">
+                    </div>
+
+                    <!-- Additional Context Box -->
+                    <div class="form-group">
+                        <label>Specific Instructions or Requirements</label>
+                        <textarea class="form-control" rows="4" placeholder="Detail any specialized fabric compliance rules, custom color specifications, embroidery placement maps, or delivery deadline requirements..."></textarea>
+                    </div>
+
+                    <!-- CTA Submit Button -->
+                    <button type="submit" class="btn btn-accent" style="width: 100%; border-radius: 4px; font-size: 1.05rem; box-shadow: var(--shadow);">
+                        Request a Free Quote
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Global Floating WhatsApp Widget -->
+    <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20request%20a%20workwear%20quote." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        💬
+    </a>
+
+    <!-- Global Structural Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo" style="color: var(--white); margin-bottom: 16px; display: inline-block;">MORISHA<span>AGENCY</span></a>
+                <p style="color: var(--border-gray); font-size: 0.9rem;">Premium industrial-grade apparel outfitting solutions engineered to optimize site identity control, safety validation, and workforce protection.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product Lines</h4>
+                <ul>
+                    <li><a href="shop.html">Industrial Workwear</a></li>
+                    <li><a href="shop.html">Corporate Apparel</a></li>
+                    <li><a href="shop.html">High-Visibility Systems</a></li>
+                    <li><a href="shop.html">PPE Equipment & Safety Footwear</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Enterprise Core</h4>
+                <ul>
+                    <li><a href="branding.html">Custom Embroidery</a></li>
+                    <li><a href="branding.html">Screen Printing Arrays</a></li>
+                    <li><a href="contact.html">Bulk Discounts Structure</a></li>
+                    <li><a href="contact.html">Request RFQ Framework</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact HQ</h4>
+                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;">📍 102 Industrial Dev Zone, Suite B</p>
+                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;">✉️ B2B@morishaagency.com</p>
+                <p style="color: var(--border-gray); font-size: 0.95rem;">📞 +1 (555) 019-9000</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Morisha Agency. All Rights Reserved. Optimizing Workforce Protection Standards Everywhere.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

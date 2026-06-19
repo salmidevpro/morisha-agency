@@ -40,6 +40,27 @@ function initGlobalFeatures() {
             globalWAWidget.href = `https://wa.me/15550199000?text=${encodeURIComponent(contextMessage)}`;
         });
     }
+
+    // Integrated Mobile Navigation Engine
+    const menuToggle = document.querySelector('.mobile-nav-toggle');
+    const navLinksContainer = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinksContainer) {
+        menuToggle.addEventListener('click', () => {
+            // Toggle layout classes safely once DOM is confirmed active
+            menuToggle.classList.toggle('open');
+            navLinksContainer.classList.toggle('mobile-active');
+        });
+
+        // Close mobile menu seamlessly if user clicks outside header bounds
+        document.addEventListener('click', (event) => {
+            const isClickInsideHeader = event.target.closest('.main-header');
+            if (!isClickInsideHeader && navLinksContainer.classList.contains('mobile-active')) {
+                menuToggle.classList.remove('open');
+                navLinksContainer.classList.remove('mobile-active');
+            }
+        });
+    }
 }
 
 /* ==========================================================================
@@ -61,9 +82,6 @@ function initShopCatalogEngine() {
             const title = card.querySelector('.card-title').textContent.toLowerCase();
             const meta = card.querySelector('.card-meta').textContent.toLowerCase();
             const matchesSearch = title.includes(query) || meta.includes(query);
-            
-            // In a production environment with data tags, we would filter categories here:
-            // const matchesCategory = activeCategories.includes(card.dataset.category);
 
             if (matchesSearch) {
                 card.style.display = 'block';
@@ -101,7 +119,7 @@ function initShopCatalogEngine() {
 
                 if (criterion === 'price-low') return priceA - priceB;
                 if (criterion === 'price-high') return priceB - priceA;
-                return 0; // Default/Popularity structural sorting baseline
+                return 0;
             });
 
             cardsArray.forEach(card => container.appendChild(card));
@@ -123,7 +141,6 @@ function initProductConfiguratorEngine() {
     const quoteBasketBtn = document.querySelector('.btn-accent');
     const directWAOrderBtn = document.querySelector('.btn-whatsapp');
 
-    // Structural Configuration Target Variables
     let selectedColor = "Safety Orange";
     let selectedSize = "M";
     const productTitle = document.querySelector('.p-details h1').textContent;
@@ -161,21 +178,18 @@ function initProductConfiguratorEngine() {
         let baseUnitCost = 55.00; 
         const totalQuantity = parseInt(quantityInput.value) || 10;
 
-        // B2B Tier Scaling Pricing Adjustments Rules
         if (totalQuantity >= 51 && totalQuantity <= 200) {
-            baseUnitCost = 49.50; // 10% wholesale cost tier rule
+            baseUnitCost = 49.50; 
         } else if (totalQuantity > 200) {
-            baseUnitCost = 44.00; // Enterprise scale allocation framework rate
+            baseUnitCost = 44.00; 
         }
 
-        // Configuration Surcharge Processing Interceptor
         const selectedBrandingIndex = brandingSelect.selectedIndex;
-        if (selectedBrandingIndex === 1) baseUnitCost += 3.50; // High Definition Embroidery surcharge mapping rules
-        if (selectedBrandingIndex === 2) baseUnitCost += 2.50; // Screen Printing process sheet calculation addition
+        if (selectedBrandingIndex === 1) baseUnitCost += 3.50; 
+        if (selectedBrandingIndex === 2) baseUnitCost += 2.50; 
 
         const consolidatedTotalCost = baseUnitCost * totalQuantity;
 
-        // Interface String Render Update Formats
         if (totalQuantity > 200) {
             dynamicPriceDisplay.innerHTML = `Custom RFQ <span style="font-size: 1rem; color: var(--text-muted); font-weight: normal;">/ Enterprise Rate calculated</span>`;
         } else {
@@ -183,13 +197,11 @@ function initProductConfiguratorEngine() {
         }
     }
 
-    // Attach Price Matrix Realtime Hooks listeners
     if (quantityInput && brandingSelect) {
         quantityInput.addEventListener('input', calculatePricingMatrix);
         brandingSelect.addEventListener('change', calculatePricingMatrix);
     }
 
-    // WhatsApp Automated Message Formulation Compiler
     if (directWAOrderBtn) {
         directWAOrderBtn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -211,7 +223,6 @@ function initProductConfiguratorEngine() {
         });
     }
 
-    // LocalStorage Pipeline Mock implementation for Quote Basket
     if (quoteBasketBtn) {
         quoteBasketBtn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -234,7 +245,6 @@ function initProductConfiguratorEngine() {
    B2B PROCUREMENT BULK ORDER ENGINE CONVERSION ROUTING
    ========================================================================== */
 function initBulkOrderFormEngine() {
-    // Hydrate form fields dynamically if pre-configured from product page choice structures
     const storedRfqDataString = localStorage.getItem('morisha_latest_rfq');
     if (storedRfqDataString) {
         const parsedRfqData = JSON.parse(storedRfqDataString);
@@ -242,7 +252,6 @@ function initBulkOrderFormEngine() {
         
         if (specificationsInputArea) {
             specificationsInputArea.value = `AUTOMATED MANIFEST LINK PROFILE:\n- Requesting bulk allocation for item: "${parsedRfqData.title}"\n- Individual Configured Parameter Options: Color: ${parsedRfqData.color}, Dimensions Array: Size ${parsedRfqData.size}.\n- Modality Selected: ${parsedRfqData.branding}\n- Est Target Count: ${parsedRfqData.quantity} Units.\n\nPlease process matching scale discount models.`;
-            // Clear storage parameters once consumed securely
             localStorage.removeItem('morisha_latest_rfq');
         }
     }
@@ -254,7 +263,7 @@ function initBulkOrderFormEngine() {
 function initBrandingIntakeEngine() {
     const brandingIntakeForm = document.querySelector('#branding-form-section form');
     if (brandingIntakeForm) {
-        brandingIntakeForm.removeAttribute('onsubmit'); // override static stub configuration parameters
+        brandingIntakeForm.removeAttribute('onsubmit'); 
         brandingIntakeForm.addEventListener('submit', (e) => {
             e.preventDefault();
             

@@ -57,22 +57,33 @@
         🚚 Free Shipping on Bulk Orders Over 100 Units! | 📞 Need an instant quote? Click to chat via WhatsApp.
     </div>
 
-    <header class="main-header">
-        <div class="container header-container">
-            <a href="index.html" class="logo">MORISHA<span>AGENCY</span></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html" class="active">Shop Catalog</a></li>
-                    <li><a href="branding.html">Custom Branding</a></li>
-                    <li><a href="contact.html">Bulk Orders</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Quick Quote</a>
-            </div>
+  <header class="main-header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">MORISHA<span>AGENCY</span></a>
+        
+        <!-- Interactive Hamburger Toggle Button -->
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop Catalog</a></li>
+                <li><a href="branding.html">Custom Branding</a></li>
+                <li><a href="contact.html">Bulk Orders</a></li>
+                <!-- Duplicate mobile action to keep layout clean -->
+                <li class="mobile-only"><a href="contact.html" class="btn btn-primary" style="text-align: center; color: white;">Quick Quote</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-actions">
+            <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Quick Quote</a>
         </div>
-    </header>
+    </div>
+</header>
 
     <main class="container section-padding">
         <div style="margin-bottom: 40px;">
@@ -131,22 +142,18 @@
 
                 <div class="grid-3">
                     
-                    <div class="card">
-                        <div class="card-img">
-                            <span class="badge-discount">B2B Best Seller</span>
-                            <img src="https://images.unsplash.com/photo-1582550943137-44f8446a3e50?q=80&w=400" alt="EnduraGuard D59 Flame-Retardant Conti Suit">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">EnduraGuard D59 Flame-Retardant Conti Suit</h3>
-                            <div class="card-meta">Sizes: 32 - 54 | Colors: Navy, Khaki</div>
-                            <div class="card-price">$42.00 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ wholesale tier</span></div>
-                            <div class="card-actions-row">
-                                <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
-                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20D59%20Conti%20Suit" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
-                            </div>
-                        </div>
-                    </div>
-
+                    <!-- EnduraGuard D59 Card Component Update -->
+<div class="card">
+    <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600" alt="EnduraGuard D59 Flame-Retardant Conti Suit">
+    </div>
+    <div class="card-body">
+        <h3 class="card-title">EnduraGuard D59 Flame-Retardant Conti Suit</h3>
+        <div class="card-meta">SABS Approved • 100% D59 Heavy Cotton • Flame & Acid Resistant</div>
+        <div class="card-price">$58.50</div>
+        <a href="product.html" class="btn btn-outline" style="width: 100%; padding: 10px;">Configure Asset</a>
+    </div>
+</div>
                     <div class="card">
                         <div class="card-img">
                             <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=400" alt="Executive Classic Pique Polo Shirt">

@@ -112,22 +112,33 @@
     </div>
 
     <!-- Global Sticky Navigation Header -->
-    <header class="main-header">
-        <div class="container header-container">
-            <a href="index.html" class="logo">MORISHA<span>AGENCY</span></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html" class="active">Shop Catalog</a></li>
-                    <li><a href="branding.html">Custom Branding</a></li>
-                    <li><a href="contact.html">Bulk Orders</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Quick Quote</a>
-            </div>
+ <header class="main-header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">MORISHA<span>AGENCY</span></a>
+        
+        <!-- Interactive Hamburger Toggle Button -->
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop Catalog</a></li>
+                <li><a href="branding.html">Custom Branding</a></li>
+                <li><a href="contact.html">Bulk Orders</a></li>
+                <!-- Duplicate mobile action to keep layout clean -->
+                <li class="mobile-only"><a href="contact.html" class="btn btn-primary" style="text-align: center; color: white;">Quick Quote</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-actions">
+            <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Quick Quote</a>
         </div>
-    </header>
+    </div>
+</header>
 
     <!-- Main Dynamic Configuration Layout -->
     <main class="container section-padding">

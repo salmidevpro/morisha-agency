@@ -37,7 +37,7 @@ function initGlobalFeatures() {
             if (currentRoute.includes('shop')) contextMessage = `Hi Morisha Agency, I'm reviewing your commercial inventory catalog and want to check stock availability.`;
             if (currentRoute.includes('branding')) contextMessage = `Hi Morisha Agency, I'm reviewing your custom corporate identity solutions and want to discuss logo integration options.`;
             
-            globalWAWidget.href = `https://wa.me/15550199000?text=${encodeURIComponent(contextMessage)}`;
+            globalWAWidget.href = `https://wa.me/256782282757?text=${encodeURIComponent(contextMessage)}`;
         });
     }
 
@@ -46,11 +46,36 @@ function initGlobalFeatures() {
     const navLinksContainer = document.querySelector('.nav-links');
 
     if (menuToggle && navLinksContainer) {
+        // Ensure nav has an id for aria-controls
+        if (!navLinksContainer.id) navLinksContainer.id = 'mobile-nav';
+        menuToggle.setAttribute('aria-controls', navLinksContainer.id);
+        menuToggle.setAttribute('aria-expanded', 'false');
+        navLinksContainer.setAttribute('aria-hidden', 'true');
+
+        // Make sure the nav panel can be clicked above other content
+        try { navLinksContainer.style.zIndex = '1002'; } catch (e) {}
+
         menuToggle.addEventListener('click', () => {
             // Toggle layout classes safely once DOM is confirmed active
             menuToggle.classList.toggle('open');
             navLinksContainer.classList.toggle('mobile-active');
+            // Update ARIA state for accessibility
+            const expanded = menuToggle.classList.contains('open');
+            try { menuToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false'); } catch (e) {}
+            try { navLinksContainer.setAttribute('aria-hidden', expanded ? 'false' : 'true'); } catch (e) {}
+            // Prevent the document click handler from immediately closing the menu
+            event && event.stopPropagation && event.stopPropagation();
         });
+
+        // Support touchstart for some mobile browsers where click is delayed
+        menuToggle.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            menuToggle.classList.toggle('open');
+            navLinksContainer.classList.toggle('mobile-active');
+            const expanded = menuToggle.classList.contains('open');
+            try { menuToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false'); } catch (err) {}
+            try { navLinksContainer.setAttribute('aria-hidden', expanded ? 'false' : 'true'); } catch (err) {}
+        }, { passive: false });
 
         // Close mobile menu seamlessly if user clicks outside header bounds
         document.addEventListener('click', (event) => {
@@ -58,6 +83,8 @@ function initGlobalFeatures() {
             if (!isClickInsideHeader && navLinksContainer.classList.contains('mobile-active')) {
                 menuToggle.classList.remove('open');
                 navLinksContainer.classList.remove('mobile-active');
+                try { menuToggle.setAttribute('aria-expanded', false); } catch (e) {}
+                try { navLinksContainer.setAttribute('aria-hidden', true); } catch (e) {}
             }
         });
     }
@@ -94,6 +121,39 @@ function initShopCatalogEngine() {
         if (displayCounter) {
             displayCounter.textContent = `Showing ${visibleCount} of ${productCards.length} industrial assets matching criteria`;
         }
+    }
+
+    // Mobile filter toggle (off-canvas)
+    const filterToggle = document.querySelector('.filter-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    const overlay = document.querySelector('.overlay-backdrop');
+
+    if (filterToggle && sidebar) {
+        filterToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const open = sidebar.classList.toggle('sidebar-open');
+            filterToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            if (overlay) overlay.classList.toggle('active', open);
+            document.body.classList.toggle('no-scroll', open);
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.sidebar') && !e.target.closest('.filter-toggle') && sidebar.classList.contains('sidebar-open')) {
+                sidebar.classList.remove('sidebar-open');
+                filterToggle.setAttribute('aria-expanded', 'false');
+                if (overlay) overlay.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            }
+        });
+
+        // Clicking overlay closes panel
+        if (overlay) overlay.addEventListener('click', () => {
+            sidebar.classList.remove('sidebar-open');
+            filterToggle.setAttribute('aria-expanded', 'false');
+            overlay.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        });
     }
 
     // Live Search Execution
@@ -219,7 +279,7 @@ function initProductConfiguratorEngine() {
                 `-----------------------------------------\n` +
                 `Please confirm active asset inventory availability and send over corresponding formal invoice sheets.`;
 
-            window.open(`https://wa.me/15550199000?text=${encodeURIComponent(structuredManifestMessage)}`, '_blank');
+            window.open(`https://wa.me/256782282757?text=${encodeURIComponent(structuredManifestMessage)}`, '_blank');
         });
     }
 

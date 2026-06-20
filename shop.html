@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B2B Industrial Catalog | Morisha Agency</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .search-box-container {
             margin-bottom: 24px;
@@ -54,8 +55,10 @@
 <body>
 
     <div class="announcement-bar">
-        🚚 Free Shipping on Bulk Orders Over 100 Units! | 📞 Need an instant quote? Click to chat via WhatsApp.
+        <i class="fas fa-truck" aria-hidden="true" style="margin-right:8px;"></i> Free Shipping on Bulk Orders Over 100 Units! | <i class="fas fa-phone" aria-hidden="true" style="margin:0 6px;"></i> Need an instant quote? Click to chat via WhatsApp.
     </div>
+
+    <div class="overlay-backdrop"></div>
 
   <header class="main-header">
     <div class="container header-container">
@@ -130,13 +133,16 @@
             <div class="shop-content">
                 
                 <div class="catalog-controls">
-                    <div style="color: var(--text-muted); font-weight: 500;">Showing 1–8 of 24 industrial assets</div>
-                    <div>
-                        <select class="sort-select">
-                            <option value="popular">Most Popular</option>
-                            <option value="price-low">Price: Low to High</option>
-                            <option value="price-high">Price: High to Low</option>
-                        </select>
+                    <div style="display:flex; gap:12px; align-items:center; width:100%;">
+                        <div style="color: var(--text-muted); font-weight: 500;">Showing 1–8 of 24 industrial assets</div>
+                        <button class="filter-toggle mobile-only" aria-expanded="false" aria-controls="shop-filters" style="margin-left:auto;">Filters <i class="fas fa-sliders-h" style="margin-left:8px;"></i></button>
+                        <div>
+                            <select class="sort-select">
+                                <option value="popular">Most Popular</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
@@ -164,7 +170,7 @@
                             <div class="card-price">$16.50 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ min 10 units</span></div>
                             <div class="card-actions-row">
                                 <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
-                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Executive%20Polo%20Shirts" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
+                                <a href="https://wa.me/256782282757?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Executive%20Polo%20Shirts" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -180,7 +186,7 @@
                             <div class="card-price">$49.95 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ pairs</span></div>
                             <div class="card-actions-row">
                                 <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
-                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Titan-X%20Safety%20Boots" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
+                                <a href="https://wa.me/256782282757?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Titan-X%20Safety%20Boots" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -195,7 +201,7 @@
                             <div class="card-price">$5.20 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ bulk rates apply</span></div>
                             <div class="card-actions-row">
                                 <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
-                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Executive%20Reflective%20Vests" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
+                                <a href="https://wa.me/256782282757?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Executive%20Reflective%20Vests" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -210,7 +216,7 @@
                             <div class="card-price">$55.00 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ Unit</span></div>
                             <div class="card-actions-row">
                                 <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
-                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Reflective%20Bomber%20Jackets" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
+                                <a href="https://wa.me/256782282757?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Reflective%20Bomber%20Jackets" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -225,7 +231,7 @@
                             <div class="card-price">$12.80 <span style="font-size:0.8rem; color: var(--text-muted); font-weight:normal;">/ Unit</span></div>
                             <div class="card-actions-row">
                                 <a href="product.html" class="btn btn-primary" style="flex: 1; padding: 10px; font-size: 0.85rem;">Configure Specs</a>
-                                <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Industrial%20Hard%20Hats" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank">💬</a>
+                                <a href="https://wa.me/256782282757?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20order%20the%20Industrial%20Hard%20Hats" class="btn btn-whatsapp" style="width: 45px; padding: 0;" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -235,8 +241,8 @@
         </div>
     </main>
 
-    <a href="https://wa.me/15550199000?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20request%20a%20workwear%20quote." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        💬
+    <a href="https://wa.me/256782282757?text=Hi%20Morisha%20Agency,%20I'd%20like%20to%20request%20a%20workwear%20quote." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
 
     <footer class="main-footer">
@@ -265,9 +271,9 @@
             </div>
             <div class="footer-col">
                 <h4>Contact HQ</h4>
-                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;">📍 102 Industrial Dev Zone, Suite B</p>
-                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;">✉️ B2B@morishaagency.com</p>
-                <p style="color: var(--border-gray); font-size: 0.95rem;">📞 +1 (555) 019-9000</p>
+                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;"><i class="fas fa-map-marker-alt" aria-hidden="true" style="margin-right:6px;"></i>102 Industrial Dev Zone, Suite B</p>
+                <p style="color: var(--border-gray); font-size: 0.95rem; margin-bottom: 8px;"><i class="fas fa-envelope" aria-hidden="true" style="margin-right:6px;"></i>B2B@morishaagency.com</p>
+                <p style="color: var(--border-gray); font-size: 0.95rem;"><i class="fas fa-phone" aria-hidden="true" style="margin-right:6px;"></i>+256 782 282757</p>
             </div>
         </div>
         <div class="container footer-bottom">
@@ -275,5 +281,7 @@
         </div>
     </footer>
 
+
+    <script src="main.js"></script>
 </body>
 </html>
